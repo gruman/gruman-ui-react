@@ -1,4 +1,6 @@
-# React Elo
+# Gruman UI React
+
+![Screenshot of all components](./assets/screenshot.png)
 
 A lightweight React component library providing customizable UI components with universal theming support, including Buttons, Alerts, Images, and Containers for rapid development. Visit [NPM](https://www.npmjs.com/package/gruman-ui-react) for more info.
 
