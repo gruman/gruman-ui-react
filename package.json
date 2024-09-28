@@ -1,0 +1,27 @@
+{
+  "name": "gruman-react",
+  "version": "1.0.1",
+  "description": "A lightweight React component library providing customizable UI components with universal theming support, including Buttons, Alerts, Images, and Containers for rapid development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "react",
+    "gruman",
+    "components",
+    "library",
+    "ui"
+  ],
+  "author": "Matthew Gruman",
+  "license": "Creative Commons Attribution license (CC BY",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gruman/-gruman-react"
+  },
+  "bugs": {
+    "url": "git+https://github.com/gruman/-gruman-react"
+  },
+  "homepage": "https://matthewgruman.com"
+}
