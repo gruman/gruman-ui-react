@@ -1,21 +1,66 @@
 # React Elo
- 
-Get Elo rankings for your chess, backgammon, or other strategy games. Visit [NPM](https://www.npmjs.com/package/react-elo) for more info. 
+
+A lightweight React component library providing customizable UI components with universal theming support, including Buttons, Alerts, Images, and Containers for rapid development. Visit [NPM](https://www.npmjs.com/package/gruman-ui-react) for more info.
 
 ## Install
 
-    yarn add @gruman-react styled-components
+```bash
+yarn add gruman-ui-react styled-components
 
 or
 
-    npm install react-elo
+npm install gruman-ui-react styled-components
+```
 
 ## Usage
 
-    import { getElo } from 'react-elo';
+```bash
+import React from 'react';
+import GlobalStyle from '@gruman-react/styles/GlobalStyle'; // Import global styles
+import { Button, Alert, Image, Container, ThemeProvider, Header } from 'gruman-ui-react'; // Import components
 
-    console.log(getElo(1200, 1500))
+// Define the menu items
+const menu = [
+  {
+    title: "About",
+    link: "https://gruman.co/about"
+  },
+  {
+    title: "Profile",
+    link: "https://gruman.co/profile"
+  },
+  {
+    title: "Portfolio",
+    link: "https://gruman.co/portfolio"
+  }
+];
 
-    output: {winNewElo: 1218, loseNewElo: 1482}
+// Define the home item
+const home = {
+  title: "React UI Gruman",
+  link: "/"
+};
 
-Match length defaults to 1. You can change it by adding the numer of matches as a third parameter.
+// Main App component
+const App: React.FC = () => {
+  return (
+    <ThemeProvider> {/* Wrap the app in ThemeProvider for theming */}
+      <GlobalStyle /> {/* Apply global styles */}
+      <Container> {/* Container for layout */}
+        <Header menu={menu} home={home} /> {/* Render the header */}
+        <main>
+          {/* Button with click handler */}
+          <Button title="Click Me" onClick={() => alert('Clicked!')} />
+          {/* Alert message */}
+          <Alert message="This is a success message!" type="success" />
+          {/* Image component with width set to 50% */}
+          <Image src="https://via.placeholder.com/150" alt="Placeholder Image" width="50%" />
+        </main>
+      </Container>
+    </ThemeProvider>
+  );
+};
+
+export default App; // Export the App component
+
+```
