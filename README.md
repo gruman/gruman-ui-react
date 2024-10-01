@@ -7,11 +7,11 @@ A lightweight React component library providing customizable UI components with 
 ## Install
 
 ```bash
-yarn add gruman-ui-react styled-components
+yarn add gruman-ui-react styled-components @types/node
 
 or
 
-npm install gruman-ui-react styled-components
+npm install gruman-ui-react styled-components @types/node
 ```
 
 ## Usage

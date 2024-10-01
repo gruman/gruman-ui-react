@@ -1,9 +1,11 @@
 export const lightTheme = {
-  primary: '#007bff',
-  success: '#28a745',
-  error: '#dc3545',
-  text: '#000',
-  background: '#fff'
+  primary: '#222',
+  text: '#222',
+  background: '#eee',
+  success: '#ccc',
+  successBorder: '#222',
+  error: '#ccc',
+  errorBorder: '#222',
 };
 
 export const darkTheme = {

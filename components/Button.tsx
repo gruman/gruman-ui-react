@@ -13,12 +13,14 @@ const Button: React.FC<ButtonProps> = ({ title, onClick }) => {
     <button
       onClick={onClick}
       style={{
-        padding: '10px 20px',
-        backgroundColor: theme.primary,
-        color: '#fff',
+        padding: '0.5rem 1rem',
+        backgroundColor: theme.text,
+        color: theme.background,
         border: 'none',
-        borderRadius: '4px',
+        borderRadius: '0.5rem',
         cursor: 'pointer',
+        textTransform: 'uppercase',
+        marginBottom: '1rem',
       }}
     >
       {title}

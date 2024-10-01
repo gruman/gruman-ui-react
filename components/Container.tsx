@@ -7,14 +7,16 @@ interface ContainerProps {
   paddingLeft?: string;
   paddingRight?: string;
   margin?: string;
+  paddingBottom?: string;
 }
 
 const Container: React.FC<ContainerProps> = ({
   children,
   maxWidth = '800px',
-  paddingLeft = '1rem',
-  paddingRight = '1rem',
+  paddingLeft = 0,
+  paddingRight = 0,
   margin = '0 auto',
+  paddingBottom = '1rem'
 }) => {
   const { theme } = useTheme();
 
@@ -25,8 +27,9 @@ const Container: React.FC<ContainerProps> = ({
         paddingLeft,
         paddingRight,
         margin,
+        paddingBottom,
         backgroundColor: theme.background,
-        color: theme.text,
+        color: theme.text
       }}
     >
       {children}

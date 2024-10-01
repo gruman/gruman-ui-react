@@ -31,6 +31,7 @@ const Header: React.FC<HeaderProps> = ({
         justifyContent: "space-between",
         alignItems: "center",
         padding: "1rem",
+        paddingBottom: "0"
       }}>
         {
           home?.link ?   
